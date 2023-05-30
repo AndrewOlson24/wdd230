@@ -1,0 +1,17 @@
+.container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+
+
+
+}
+
+.box1{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+footer{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+}
