@@ -1,0 +1,54 @@
+@media screen and (max-width: 894px) and (min-width: 650px){
+    .boxes{
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: repeat(8, 1fr);
+    }
+    
+    .div1{
+        grid-column: span 2; 
+        grid-row: span 2;
+    }
+    .div2:nth-child(2),.div4:nth-child(4){
+        display: none;
+    }
+    .div3{
+        grid-column: span 2; 
+        grid-row: span 2 ;
+    }
+    .div5{
+        grid-column: span 2; 
+        grid-row: 5;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4;
+        border: 2px solid #000; /* Set the border style and color */
+        padding: 10px; }
+        
+        .spot1{
+            border: 2px solid #000; /* Set the border style and color */
+            padding: 10px;
+            grid-row: span 4;
+        }
+        .spot2{
+            border: 2px solid #000; /* Set the border style and color */
+            padding: 10px;
+            grid-row: span 4;
+        }
+        .spot3{
+            border: 2px solid #000; /* Set the border style and color */
+            padding: 10px;
+            grid-row: span 4;
+    }
+    .div6{
+        grid-column: 1; 
+        grid-row: span 2 ;
+    }
+    .div7{
+        grid-column: 2 ;
+        grid-row: span 2 ;
+    }
+    .div8{
+        grid-column: span 2; 
+        grid-row: 8;
+    }
+}
