@@ -1,0 +1,88 @@
+@media screen and (max-width: 649px){
+    .boxes{
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(8, 1fr);
+    }
+    
+    .div1{
+        grid-column: auto; 
+        grid-row: span 2;
+    }
+    .div2:nth-child(2),.div4:nth-child(4){
+        display: none;
+    }
+    .div3{
+        grid-column: auto; 
+        grid-row: span 2;
+    }
+    .div5{
+        grid-column: auto; 
+        grid-row: 5;
+    }
+    .div6{
+        grid-column: auto; 
+        grid-row: 6;
+    }
+    .div7{
+        grid-column: auto; 
+        grid-row: 7;
+    }
+    .div8{
+        grid-column: auto; 
+        grid-row: 8;
+    }
+    nav{
+        background-color: rgb(237, 31, 31);
+    }
+
+    nav button{
+        margin:2rem 2vw;
+        background:transparent;
+        border: none;
+        font-size: 2rem;
+        color: #555;
+
+
+    }
+    nav ul{
+        list-style-type: none;
+        padding:0;
+        margin: 0;
+    }
+    .topnav{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li a {
+        display:block;
+        padding: .8rem 2vw;
+        text-decoration: none;
+        color:black;
+        border-top: 1px soild rgba(0,0,0,0.5);
+
+    }
+    nav ul li a :hover{
+        background-color: aquamarine;
+
+    }
+
+
+
+    #hamButton {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: fit-content;
+        font-size: 1.5rem;
+        padding: .5rem;
+        color: navy;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: #333;
+    }
+}
