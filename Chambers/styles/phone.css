@@ -31,16 +31,18 @@
         grid-column: auto; 
         grid-row: 8;
     }
-    nav{
-        background-color: rgb(237, 31, 31);
-    }
 
+
+
+
+    
     nav button{
         margin:2rem 2vw;
         background:transparent;
-        border: none;
+        border: bisque solid;
         font-size: 2rem;
         color: #555;
+        
 
 
     }
@@ -62,10 +64,8 @@
         border-top: 1px soild rgba(0,0,0,0.5);
 
     }
-    nav ul li a :hover{
-        background-color: aquamarine;
-
-    }
+   
+    
 
 
 
@@ -79,10 +79,106 @@
         padding: .5rem;
         color: navy;
     }
+    #hamButton span:nth-child(1){
+        display:block;
+    }
+    #hamButton span:nth-child(2){
+        display:none;
+    }
+    #hamButton.open span:nth-child(1){
+        display:block;
+    }
+    #hamButton.open span:nth-child(2){
+        display:none;
+    }
+
     .navigation {
         display: flex;
         flex-direction: column;
         list-style: none;
         background-color: #333;
     }
+    .navigation li {
+        display: none;
+    }
+    .navigation li a {
+        padding: 1.15rem;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+    .navigation li a:hover {
+        background-color: #0f0e0e;
+        color: #333;
+        font-weight: 700;
+    }
+
+
+ nav ul li a:hover{
+        background-color: rgb(8, 10, 10,0.3);
+
+    }
+    .navigation.responsive li {
+        display: block;
+        width: 100%;
+    }
+    .navigation.responsive li a {
+        display: block;
+    }
+
+
+
+    #footer{
+    
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        position:bottom;
+    
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: span;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        font-weight: bold;
+        background-color:#E98074;
+        
+    }
+    .testty{
+        border-top:#333 double;
+        border-bottom: #333 double;
+    }
+    .line {
+        position: relative;
+        background-color: #E85A4F ;
+        color: #8e13e0;
+    
+      }
+      
+      .line::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: black; /* Adjust the color as needed */
+      }
+    
+        
+        
+    
+       
+        .logooo img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 50%;
+            max-height: auto;
+        }
+
 }

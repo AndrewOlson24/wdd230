@@ -33,5 +33,5 @@ const months = [
 const d = new Date();
 const monthName = months[d.getMonth()];
 const year = d.getFullYear();
-const fulldate = `${monthName} ${d.getDate()}, ${year}`;
-document.querySelector("#date2").textContent = fulldate;
+const fullydate = `${monthName} ${d.getDate()}, ${year}`;
+document.querySelector("#date2").textContent = fullydate;
