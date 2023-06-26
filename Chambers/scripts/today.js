@@ -57,7 +57,15 @@ try {
 }
 
 // Long hand method ... building day and month names from built-in date methods.
-
+const daynames = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday"
+];
 const months = [
 	"Jan",
 	"Feb",
@@ -73,7 +81,14 @@ const months = [
 	"Dec"
 ];
 const d = new Date();
+const dayName = daynames[d.getDay()];
 const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 const fullydate = `${monthName} ${d.getDate()}, ${year}`;
 document.querySelector("#date2").textContent = fullydate;
+
+
+
+                    
+
+

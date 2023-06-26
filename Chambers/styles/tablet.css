@@ -1,7 +1,7 @@
 @media screen and (max-width: 894px) and (min-width: 650px){
     #page-container{
         position: relative;
-        min-height: 190vh;
+        min-height: 290vh;
         background-color: #f8cb8d;
         height: 100%;
         width: fit-content;

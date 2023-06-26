@@ -1,7 +1,7 @@
 @media screen and (max-width: 649px){
     #page-container{
         position: relative;
-        min-height: 250vh; /*changes the background size so your grid fits the page**/
+        min-height: 350vh; /*changes the background size so your grid fits the page**/
         background-color: #f8cb8d;
         height: 100%;
         width: fit-content;

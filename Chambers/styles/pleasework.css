@@ -172,14 +172,25 @@ header p{
     width: 90;
 	border: 1px solid #bbb;
 	padding: 0.75rem 1rem;
-	background-color: #7748f8;
-    color: rgb(240, 58, 185);
+	background-color: #880a0a;
+    color: #fff;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.possible{
+    margin-top: 5px;
+    width: 90;
+	border: 5px solid #070101;
+	padding: 0.75rem 1rem;
+	background-color: #880a0a;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
