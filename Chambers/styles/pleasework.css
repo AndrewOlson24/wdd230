@@ -28,7 +28,7 @@ header p{
 .gridlogo img{
     max-width: 55%; 
     height: auto;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
 }
 .test{
     display: flex;
@@ -117,7 +117,6 @@ header p{
     bottom: 0;
     width: 100%;
     height: 10px;
-    position:bottom;
     flex-shrink: 0;
     min-height:fit-content;
     max-width:max-content;
@@ -169,8 +168,7 @@ header p{
 
 .time{
     margin-top: 5px;
-    width: 90;
-	border: 1px solid #bbb;
+	border: 5px solid #070101;
 	padding: 0.75rem 1rem;
 	background-color: #880a0a;
     color: #fff;
@@ -181,7 +179,6 @@ header p{
 }
 .possible{
     margin-top: 5px;
-    width: 90;
 	border: 5px solid #070101;
 	padding: 0.75rem 1rem;
 	background-color: #880a0a;
@@ -345,7 +342,7 @@ header p{
     margin: auto;
     display: block;
     bottom: 10px;
-    size: auto;
+    resize: auto;
     color: #fff;
     padding:5px;
     overflow:visible;
@@ -453,7 +450,7 @@ header p{
 
     display:block;
     padding:5px;
-    position: center;
+    position:sticky;
     object-fit: contain;
     height:100%;
     width:auto;
@@ -484,7 +481,7 @@ header p{
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    size: 50%;
+    resize: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
