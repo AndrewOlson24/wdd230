@@ -72,17 +72,4 @@ images.forEach(image => {
 
 
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("grid");
-
-gridbutton.addEventListener("click", () => {
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", () => {
-	display.classList.remove("grid");
-	display.classList.add("list");
-});
 

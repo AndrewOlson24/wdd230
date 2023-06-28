@@ -726,14 +726,17 @@ header p{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+    
+    
 }
 
 .main1 {
 	margin: 0 auto;
 	padding: 0.5rem;
-	max-width: 700px;
+	max-width: 900px;
 	background-color: #fff;
 	font-family: Roboto, Helvetica, sans-serif;
+    max-height:max-content;
 }
 
 .menu {
@@ -805,7 +808,7 @@ section {
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
+	background-color: rgb(36, 187, 137);
 }
 
 section h3 {
