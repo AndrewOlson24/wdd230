@@ -729,7 +729,6 @@ header p{
     
     
 }
-
 .main1 {
 	margin: 0 auto;
 	padding: 0.5rem;
@@ -738,6 +737,7 @@ header p{
 	font-family: Roboto, Helvetica, sans-serif;
     max-height:max-content;
 }
+
 
 .menu {
 	margin: 1rem auto;
@@ -769,7 +769,7 @@ section {
 	text-align: center;
 }
 
-.grid img {
+.grid img{
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
 }
@@ -799,7 +799,7 @@ section {
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+	display: none; 
 }
 
 .list section h3 {
@@ -827,7 +827,7 @@ section a {
 	letter-spacing: 1.1pt;
 }
 
-.grid img {
+.picture {
 	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
+	max-width: 100%; 
 }
