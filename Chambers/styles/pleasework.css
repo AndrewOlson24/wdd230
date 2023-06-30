@@ -831,3 +831,51 @@ section a {
 	height: 75px;
 	max-width: 100%; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.parentGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    }
+    
+    .div1Grid { grid-area: 1 / 1 / 3 / 3;
+                border: #000 10px solid;
+            }
+    .div2Grid { grid-area: 1 / 3 / 2 / 4;
+                display: none; 
+            }
+    .div3Grid { grid-area: 1 / 3 / 3 / 5;
+                border: #000 10px solid; 
+            }
+    .div4Grid { grid-area: 3 / 1 / 4 / 2;
+                display: none; 
+            }
+    .div5Grid { grid-area: 3 / 1 / 5 / 3;
+                border: #000 10px solid; 
+            }
+    .div6Grid { grid-area: 3 / 3 / 4 / 4;
+                display: none; 
+            }
+    .div7Grid { grid-area: 3 / 3 / 5 / 5; 
+                border: #000 10px solid;
+            }
+
+
+
+
