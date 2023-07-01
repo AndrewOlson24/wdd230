@@ -61,10 +61,10 @@
                     <legend>Applicant Information</legend>
                     <label class="top">First Name*<input type="text" name="fname" required></label>
                     <label class="top">Last Name*<input type="text" name="lname" required></label>
-                    <label class="top">business position title<input type="ur" name="url" placeholder="http://"></label>
+                    <label class="top">Martial Arts Title<input type="ur" name="url" placeholder="*Oyakata*"></label>
                     <label class="top">Phone Number*<input type="tel" name="phone" placeholder="1235555454"></label>
-                    <label class="top">Email Address*<input type="email" name="email" placeholder="someone@someWhere.com" required></label>
-                    <label class="top">Dojo position title<input type="ur" name="url" placeholder="http://"></label>
+                    <label class="top">Email Address*<input type="email" name="email" placeholder="someone@somewhere.com" required></label>
+                    <label class="top">Belt Color Rank<input type="ur" name="url" placeholder="Black?"></label>
                 </fieldset>
 
 
@@ -82,9 +82,11 @@
 
                     <fieldset>
                         <legend>Business Description</legend>
-                        <label class="textbox"><textarea name="message" rows="10" cols="30">please type</textarea></label>
+                        <label class="textbox"><textarea name="message" rows="10" cols="30" placeholder="Please explain your Dojo.."></textarea></label>
                     </fieldset>
 
+
+                    <input type="hidden" id="timestamp" name="timestamp">
                     <input  type="Submit" value="Welcome to the Dojo" class="submitBtn"></input>
 
 
