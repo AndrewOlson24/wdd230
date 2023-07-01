@@ -1,0 +1,68 @@
+{
+    "dojo": [
+      {
+        "name": "Cobra Kai",
+        "birthdate": "est 1980",
+        "numofchildren": 11,
+        "imageurl": "https://static.wikia.nocookie.net/thekaratekid/images/0/03/Cobra_Kai_c4-0-895-520_s885x516.jpg/revision/latest?cb=20180602000211"
+      },
+      {
+        "name": "Miyagi-do",
+        "birthdate": "est 2019",
+        "numofchildren": 56,
+        "imageurl": "https://static.wikia.nocookie.net/thekaratekid/images/d/d7/Miyagi_Do_Karate_Logo-Official.jpg/revision/latest/scale-to-width-down/1000?cb=20210102073457"
+      },
+      {
+        "name": "Eagle Fang Karate",
+        "birthdate": "est 2021",
+        "numofchildren": 10,
+        "imageurl": "https://static.wikia.nocookie.net/thekaratekid/images/8/80/Eagle_fang_karate_logo.svg/revision/latest?cb=20210102020422"
+      },
+      {
+        "name": "Krunch Karate",
+        "birthdate": "est 1987",
+        "numofchildren": 34,
+        "imageurl": "https://static.wikia.nocookie.net/thekaratekid/images/c/c3/Krunch_Karate_Logo_Cobra_Kai_Season_1.png/revision/latest/scale-to-width-down/1000?cb=20220122021636"
+      },
+      {
+        "name": "Locust Valley Karate club",
+        "birthdate": "est 1981",
+        "numofchildren": 10,
+        "imageurl": "https://static.wikia.nocookie.net/thekaratekid/images/8/81/Locust_Valley_Karate_Club_Karate_Kid_Logo.png/revision/latest/scale-to-width-down/1000?cb=20190707222700"
+      },
+      {
+        "name": "Xtreme Martial Arts",
+        "birthdate": "est 2000",
+        "length": 3,
+        "order": 5,
+        "numofchildren": 42,
+        "imageurl": "https://static.wikia.nocookie.net/thekaratekid/images/8/8c/Xtreme_Martial_Arts_Logo_Cobra_Kai_Season_4.png/revision/latest/scale-to-width-down/1000?cb=20220122012404"
+      },
+      {
+        "name": "All Star Karate",
+        "birthdate": "est 1993",
+        "length": 17,
+        "order": 6,
+        "numofchildren": 48,
+        "imageurl": "https://static.wikia.nocookie.net/thekaratekid/images/8/84/All_Star_Karate_Logo_Cobra_Kai_Season_1.png/revision/latest/scale-to-width-down/1000?cb=20220122014906"
+      },
+      {
+        "name": "Yoshukai Karate",
+        "birthdate": "est 1974",
+        "length": 23,
+        "order": 7,
+        "numofchildren": 32,
+        "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Yoshukai-Karate_emblem%2C_international_style.svg/1024px-Yoshukai-Karate_emblem%2C_international_style.svg.png"
+      },
+      {
+        "name": "Cutting Edge Karate",
+        "birthdate": "est 1999",
+        "length": 19,
+        "order": 9,
+        "numofchildren": 7,
+        "imageurl": "https://static.wikia.nocookie.net/thekaratekid/images/d/d3/Cutting_Edge_Karate_Cobra_Kai_Season_1.png/revision/latest?cb=20220122012932"
+      }
+      
+    ]
+  }
+  
