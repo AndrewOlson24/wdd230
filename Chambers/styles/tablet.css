@@ -230,4 +230,25 @@
     }
     
     
+    .anotherGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-column-gap: 5px;
+        background-color: #E98074;
+    }
+    .anotherone .anotheroneteen{
+        grid-area: 2 / 1 / 3 / 3;
+        margin: 5%;
+        padding: 10%;
+        
+    }
+
+    .anotherone{
+        grid-column: auto auto;
+        grid-row: auto span 2;
+        padding-right: 10%;
+        
+        
+    }
 }
