@@ -543,7 +543,7 @@ header p{
 .containit{
     display: flex;
     justify-content: center;
-    background-color: #E98074 
+    background-color: #E98074; 
     
 }
 
@@ -857,14 +857,19 @@ section a {
 
 form fieldset{
     margin: 2rem 0 ;
-    border: 1px solid #000;
+    border: 5px solid #757272;
     border-radius: 12px;
     padding: .5rem 2;
+    background-color: #eee;
 }
 form legend{
     color: blue;
     margin: 0 1rem;
     padding: 0 .5rem;
+    border: #000 solid 2px;
+    background-color: #71e72d;
+    border-radius: 38%;
+  
 }
 form label.top input, form label.top select{
     -webkit-appearance: none ;
@@ -909,6 +914,197 @@ h1{
     color: #bbb ;
 }
 
+.anotherGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    border:#000 solid 3px;
+    background-color: #E98074;
+}
 
+.anotherone{
+    grid-template-columns: auto;
+    
+}
+.anotherone .anotheroneteen{
+    grid-template-columns: auto;
+    margin-top: 50%;
+    padding: 10%;
+}
+.anotheroneteen p{
+    text-align: center;
+    color:#000;
+    background-color: #353434;
+    border-radius: 4%;
+    border: #000 solid 4px;
+}
+.anotheroneteen img{
+    border-radius: 12%;
+    border:#000 solid 5px;
+}
 
-
+.anotherone .parent {
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: #f52323 solid 1px;
+    background-color: #353434;
+    color: #eaeaf1;
+    }
+    
+    .div1000 { 
+        grid-area: 1 / 1 / 2 / 2;
+        display:none; }
+    .div2000 {
+         grid-area: 1 / 1 / 2 / 6;
+         border: #f52323 solid 5px;
+         border-radius: 35%;
+         padding: 3%;
+         text-align: center;
+         margin: 5%;
+         font-size: 30px;
+         }
+    .div3000 {
+         grid-area: 2 / 1 / 3 / 2;
+         border: #000 solid 1px;}
+    .div4000 {
+         grid-area: 2 / 2 / 3 / 3;
+         border: #000 solid 1px;
+         color:#f5f3f1;
+         text-align: center; }
+    .div5000 {
+         grid-area: 2 / 3 / 3 / 4;
+         border: #000 solid 1px;
+         color:#CD7F32;
+         text-align: center; }
+    .div6000 {
+         grid-area: 2 / 4 / 3 / 5;
+         border: #000 solid 1px;
+         color:#C0C0C0;
+         text-align: center; }
+    .div7000 {
+         grid-area: 2 / 5 / 3 / 6;
+         border: #000 solid 1px;
+         color:#FFD700;
+         text-align: center; }
+    .div8000 {
+         grid-area: 3 / 1 / 4 / 2;
+         border: #000 solid 1px;
+         text-align: center; }
+    .div9000 {
+         grid-area: 3 / 2 / 4 / 3;
+         border: #000 solid 1px;
+         text-align: center;
+         color:red; }
+    .div10000 {
+         grid-area: 3 / 3 / 4 / 4;
+         border: #000 solid 1px;
+         text-align: center; 
+         color:red;}
+    .div11000 {
+         grid-area: 3 / 4 / 4 / 5;
+         border: #000 solid 1px;
+         text-align: center;
+         color:red; }
+    .div12000 {
+         grid-area: 3 / 5 / 4 / 6;
+         border: #000 solid 1px;
+         text-align: center;
+        color:green }
+    .div13000 {
+         grid-area: 4 / 1 / 5 / 2;
+         border: #000 solid 1px;
+         text-align: center;
+          }
+    .div14000 {
+         grid-area: 4 / 2 / 5 / 3;
+         border: #000 solid 1px;
+         text-align: center; 
+         color:red;}
+    .div15000 {
+         grid-area: 4 / 3 / 5 / 4;
+         border: #000 solid 1px;
+         text-align: center;
+         color:red; }
+    .div16000 { 
+        grid-area: 4 / 4 / 5 / 5;
+        border: #000 solid 1px;
+        text-align: center;
+        color:green  }
+    .div17000 { 
+        grid-area: 4 / 5 / 5 / 6;
+        border: #000 solid 1px;
+        text-align: center;
+        color:green  }
+    .div18000 { 
+        grid-area: 5 / 1 / 6 / 2;
+        border: #000 solid 1px;
+        text-align: center; }
+    .div19000 {
+         grid-area: 5 / 2 / 6 / 3;
+         border: #000 solid 1px;
+         text-align: center;
+         color:red; }
+    .div20000 {
+         grid-area: 5 / 3 / 6 / 4;
+         border: #000 solid 1px;
+         text-align: center;
+         color:green  }
+    .div21000 {
+         grid-area: 5 / 4 / 6 / 5;
+         border: #000 solid 1px;
+         text-align: center;
+         color:green  }
+    .div22000 { 
+        grid-area: 5 / 5 / 6 / 6;
+        border: #000 solid 1px;
+        text-align: center;
+        color:green  }
+    .div23000 { 
+        grid-area: 6 / 1 / 7 / 2;
+        border: #000 solid 1px;
+        text-align: center; }
+    .div24000 { 
+        grid-area: 6 / 2 / 7 / 3;
+        border: #000 solid 1px;
+        text-align: center;
+        color:green  }
+    .div25000 { 
+        grid-area: 6 / 3 / 7 / 4;
+        border: #000 solid 1px;
+        text-align: center;
+        color:green  }
+    .div26000 {
+         grid-area: 6 / 4 / 7 / 5;
+         border: #000 solid 1px;
+         text-align: center;
+         color:green  }
+    .div27000 {
+         grid-area: 6 / 5 / 7 / 6;
+         border: #000 solid 1px;
+         text-align: center; 
+         color:green }
+    .div28000 {
+         grid-area: 7 / 1 / 8 / 2;
+         border: #000 solid 1px;
+         text-align: center; }
+    .div29000 {
+         grid-area: 7 / 2 / 8 / 3;
+         border: #000 solid 1px;
+         text-align: center; }
+    .div30000 {
+         grid-area: 7 / 3 / 8 / 4;
+         border: #000 solid 1px;
+         text-align: center; }
+    .div31000 {
+         grid-area: 7 / 4 / 8 / 5;
+         border: #000 solid 1px;
+         text-align: center; }
+    .div32000 {
+         grid-area: 7 / 5 / 8 / 6;
+         border: #000 solid 1px;
+         text-align: center; }
