@@ -810,18 +810,16 @@ header p{
 .main1 {
 	margin: 0 auto;
 	padding: 0.5rem;
-	max-width: 900px;
+	max-width: 700px;
 	background-color: #fff;
 	font-family: Roboto, Helvetica, sans-serif;
-    max-height:max-content;
 }
-
 
 .menu {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #000;
+	background-color: #bed;
 	text-align: center;
 }
 
@@ -847,7 +845,7 @@ section {
 	text-align: center;
 }
 
-.grid img{
+.grid img {
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
 }
@@ -858,7 +856,6 @@ section {
 
 .grid h3 {
 	font-family: "Caveat", cursive;
-    font-size: medium;
 }
 
 .list {
@@ -878,7 +875,7 @@ section {
 }
 
 .list section img {
-	display: none; 
+	display: none; /* smaller viewports only */
 }
 
 .list section h3 {
@@ -887,7 +884,7 @@ section {
 }
 
 .list section:nth-child(even) {
-	background-color: rgb(36, 187, 137);
+	background-color: #bed;
 }
 
 section h3 {
@@ -906,10 +903,7 @@ section a {
 	letter-spacing: 1.1pt;
 }
 
-.picture {
-	height: 75px;
-	max-width: 100%; 
-}
+
 
 
 
@@ -1187,3 +1181,5 @@ h1{
          grid-area: 7 / 5 / 8 / 6;
          border: #000 solid 1px;
          text-align: center; }
+
+  

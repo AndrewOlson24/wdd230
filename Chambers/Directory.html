@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,600&family=Roboto+Condensed:ital@0;1&family=Staatliches&family=Ysabeau:ital,wght@1,200;1,300;1,500&display=swap" rel="stylesheet">
 <title>CHamber of Commerce</title>
-<script src=""></script>
+<script src="../Chambers/scripts/update.js"></script>
 
 
 <body>
@@ -54,9 +54,74 @@
         
 
     </header>
-    <main>
+    <body>
+        <header>
+            <h1>Latter-day Prophets</h1>
+          </header>
+          <main>
+            <div class="menu">
+                <button id="grid">⏹️Grid</button>
+                <button id="list">📄List</button>
+            </div>
+            <article class="grid">
+                <div class=""></div>
+            </article>
+            <div class="grid"></div>
+            
+          </main>
         
-    </main>
+        
+        </body>>
+        <script >
+            
+            document.addEventListener('DOMContentLoaded', () => {
+                const urlData = "https://andrewolson24.github.io/wdd230/Chambers/scripts/data.json";
+
+                async function getDojoData(urlData) {
+                    const response = await fetch(urlData);
+                    const data = await response.json();
+                    return data.dojo;
+                }
+
+                const displayDojo = (dojo) => {
+                    const grid = document.querySelector('div.grid');
+
+                    dojo.forEach((dojoss) => {
+                    let card = document.createElement('section');
+                    let imageurl = document.createElement('img');
+                    let name = document.createElement('h2');
+                    let numofchildren = document.createElement('p');
+                    let birthdate = document.createElement('p');
+
+                    name.innerHTML = `${dojoss.name}`;
+                    numofchildren.innerHTML = `${dojoss.numofchildren}`;
+                    birthdate.innerHTML = `${dojoss.birthdate}`;
+                    imageurl.innerHTML = `${dojoss.imageurl}`;
+                    
+
+                    logo.setAttribute('src', dojoss.imageurl);
+                    logo.setAttribute('alt', `${dojoss.name}`);
+                    logo.setAttribute('src', 'Students: ' `${dojoss.name}`)
+                    logo.setAttribute('loading', 'lazy');
+
+                    card.appendChild(name);
+                    //card.appendChild(imageurl);
+                    card.appendChild(birthdate);
+                    card.appendChild(numofchildren);
+            
+
+                    grid.appendChild(card);
+                    });
+                }
+
+                getDojoData(urlData)
+                    .then((dojo) => {
+                    displayDojo(dojo);
+                    });
+
+                });
+
+    </script>
         
         
 
@@ -82,13 +147,11 @@
                 <br>
                 <cc>&copy; 2023 CobraKai Chamber of Commerce.:|:. Andrew W Olson .:|:. WDD 230 Project .:|:. Last Modification: <span id="date1"></span> <span id="message"></span></cc>    
                 
-                <script src="../Chambers/scripts/today.js"></script>  
+                <script src="../Chambers/scripts/today.js"></script> 
+                
+                <script src="../lesson08/pleasework.js"></script>
+                
             </div>
             
         </footer>
     </div>
-    <script src="../Chambers/scripts/today.js">  </script>
-    <script src="../Chambers/scripts/update.js"></script>
-    <script src="../lesson08/pleasework.js"></script>
-</body>
-</html>
