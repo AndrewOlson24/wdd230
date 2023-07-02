@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,600&family=Roboto+Condensed:ital@0;1&family=Staatliches&family=Ysabeau:ital,wght@1,200;1,300;1,500&display=swap" rel="stylesheet">
 <title>CHamber of Commerce</title>
-<script src="../Chambers/scripts/update.js"></script>
+<script src=""></script>
 
 
 <body>
@@ -34,8 +34,8 @@
                       <li><a href="../Chambers/Index.html">Home</a></li>  
                       <li><a href="../Chambers/Discover.html">Discovery</a></li>   
                       <li><a href="../Chambers/Directory.html">Directory</a></li>  
-                      <li><a href="../Chambers/Join.html">Join</a></li>
-                      <li><a href="../Chambers/contact.html">Contact</a></li>  
+                      <li><a href="../Chambers/Join.html">Join</a></li> 
+                      <li><a href="../Chambers/contact.html">Contact</a></li> 
                       <li><a herf="https://www.facebook.com/"><img src="../Chambers/images/Facebook-logo.png" style="width:25%"></a></li>  
                       <li><a herf="https://www.instagram.com/"><img src="../Chambers/images/Instagram-Logo.png" style="width:25%"></a></li> 
                     </ul>
@@ -55,72 +55,24 @@
         
 
     </header>
-    <body>
-        <header>
-            <h1>Latter-day Prophets</h1>
-          </header>
-          <main>
-            
-            <div class="grid"></div>
-            
-          </main>
-        
-        
-        </body>>
-        <script >
-            
-            document.addEventListener('DOMContentLoaded', () => {
-                const urlData = "https://andrewolson24.github.io/wdd230/Chambers/scripts/data.json";
+    <main>
 
-                async function getDojoData(urlData) {
-                    const response = await fetch(urlData);
-                    const data = await response.json();
-                    return data.dojo;
-                }
+        <form method="get" action="thankyou.html">
+            <fieldset> 
+                <legend>Applicant Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Email Address*<input type="email" name="email" placeholder="someone@somewhere.com" required></label>
+            </fieldset>
 
-                const displayDojo = (dojo) => {
-                    const grid = document.querySelector('div.grid');
+        <fieldset>
+            <legend>QUESTIONS, COMMENTS, CONCERNS</legend>
+            <label class="textbox"><textarea name="message" rows="10" cols="30" placeholder="comments.."></textarea></label>
+        </fieldset>
 
-                    dojo.forEach((dojoss) => {
-                    let card = document.createElement('section');
-                    let imageurl = document.createElement('img');
-                    let name = document.createElement('h2');
-                    let numofchildren = document.createElement('p');
-                    let birthdate = document.createElement('p');
-
-                    name.innerHTML = `${dojoss.name}`;
-                    numofchildren.innerHTML = `${dojoss.numofchildren}`;
-                    birthdate.innerHTML = `${dojoss.birthdate}`;
-                    imageurl.innerHTML = `${dojoss.imageurl}`;
-                    
-
-                    logo.setAttribute('src', dojoss.imageurl);
-                    logo.setAttribute('alt', `${dojoss.name}`);
-                    logo.setAttribute('src', 'Students: ' `${dojoss.name}`)
-                    logo.setAttribute('loading', 'lazy');
-
-                    card.appendChild(name);
-                    //card.appendChild(imageurl);
-                    card.appendChild(birthdate);
-                    card.appendChild(numofchildren);
-            
-
-                    grid.appendChild(card);
-                    });
-                }
-
-                getDojoData(urlData)
-                    .then((dojo) => {
-                    displayDojo(dojo);
-                    });
-
-                });
-
-    </script>
-        
-        
-
-
+        <input type="hidden" id="timestamp" name="timestamp">
+        <input  type="Submit" value="Thanks" class="submitBtn"></input>
+    </main> 
         <footer id="footer">
             
             <div class="parent">
@@ -142,11 +94,12 @@
                 <br>
                 <cc>&copy; 2023 CobraKai Chamber of Commerce.:|:. Andrew W Olson .:|:. WDD 230 Project .:|:. Last Modification: <span id="date1"></span> <span id="message"></span></cc>    
                 
-                <script src="../Chambers/scripts/today.js"></script> 
-                
-                <script src="../lesson08/pleasework.js"></script>
-                
+                <script src="../Chambers/scripts/today.js"></script>  
             </div>
             
         </footer>
     </div>
+    <script src="../Chambers/scripts/today.js">  </script>
+    <script src="../Chambers/scripts/update.js"></script>
+</body>
+</html>
