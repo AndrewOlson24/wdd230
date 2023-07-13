@@ -75,20 +75,176 @@ text-decoration: none;
 
 /*************************BODY***********************************/
 body{
-    background-color: rgb(108, 196, 50);
+    background-color: rgb(81, 112, 60);
 }
 .container{
     margin: 100px;
-    padding: 200px;
+    padding: 10px;
     border: #00093c solid 7px;
-    position:fixed;
+    border-radius: 2%;
+    position: relative;
+    min-height:200vh ;
+    max-height:max-content;
+    background-color: #125215;
     
 }
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+    
+.div1 { grid-area: 1 / 1 / 4 / 2;
+        border: #00093c solid 5px;
+        padding: 20px;
+        border-radius: 15%;
+        margin: 10px;
+        background-color: rgb(130, 194, 88) }
+.div2 { grid-area: 1 / 2 / 2 / 3;
+        display: none; }
+.div3 { grid-area: 1 / 2 / 4 / 4;
+        
+        padding: 2px;
+        box-sizing: border-box;
+        
+        
+        margin: 5%; }
+.fruit{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: #00093c solid 5px;
+    border-radius: 15%;
+}
+.div3:hover .fruit {
+    opacity: 0.3;
+  }
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+.div3:hover .middle {
+    opacity: 1;
+  }
+  
+.text {
+    background-color: #c50bbc;
+    border-radius: 12%;
+    color: white;
+    font-size: 36px;
+    padding: 1px 3px;
+  }
+.div4 { grid-area: 1 / 4 / 2 / 5;
+        display: none; }
+.div5 { grid-area: 1 / 4 / 4 / 5;
+        border: #00093c solid 5px;
+        padding: 5px;
+        border-radius: 15%;
+        margin: 5px;
+        background-color: rgb(130, 194, 88) }
+.div5 h5{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    color: #fff;
+}
+.div5 p{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: wavy;
+    background-color: rgb(10, 102, 10);
+    color: #fff;
+}
+.div5 .kids .children_img{
+    border-radius: 30%;
+    border: #00093c solid 4px;
+
+}
+
+.kids{
+    padding: 15px;
+    text-align: center;
+    
+    
+}
+.children{
+    padding: 5px;
+}
+.div6 { grid-area: 4 / 1 / 6 / 2;
+        border: #00093c solid 5px;
+        border-radius: 15%;
+        background-color: rgb(130, 194, 88) }
+.fruit_of_the_month{
+    padding: 5%;
+    text-align: center;
+
+}
+.pineapple{
+    border: #00093c solid 3px;
+}
+.fruit_of_the_month h7{
+    margin: 10%;
+    text-align: center;
+
+}
+.div7 { grid-area: 4 / 2 / 6 / 3;
+        border: #00093c solid 5px;
+        border-radius: 15%;
+        background-color: rgb(130, 194, 88) }
+.div8 { grid-area: 4 / 3 / 6 / 5;
+        border: #00093c solid 5px;
+        border-radius: 15%;
+        background-color: rgb(130, 194, 88);
+ 
+        padding: 10px;
+        margin: 10px;
+        }
+.div8 h5{
+    text-align: center;
+}
+.the_box{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 12px;
+}
+.the_farmers{
+    margin: 1px;
+    padding: 15%;
+    border: #00093c solid 3px;
+    border-radius: 10%;
+    font-size: 12px;
+    text-align: center;
+    background-color: #125215;
+    color: #fff;
+}
+
+.farmer_of_the_valley{
+    border-radius: 30%;
+    border: #00093c solid 4px;
+    background-color: #fff;
+}
+.div9 { grid-area: 4 / 4 / 6 / 5;
+        display: none;
+        /*border: #00093c solid 5px;
+        border-radius: 15%;
+        background-color: rgb(130, 194, 88)*/ }
 
 /*************************FOOTER***********************************/
 footer{
 width:100%;
-position:absolute;
+position:relative;
 bottom: 0;
 background: linear-gradient(to right, #00093c, #2d0b00);
 color:#fff;
