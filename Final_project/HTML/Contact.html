@@ -26,10 +26,10 @@
                     <ul class="navigation">
                 
                         <li><a href="../HTML/index.html">Home</a></li>  
-                        <li><a href="../HTML/Discovery.html">Discovery</a></li>   
+                        <li><a href="../HTML/Discovery.html">Fresh</a></li>   
                         <li><a href="../HTML/Directory.html">Directory</a></li>  
                         <li><a href="../HTML/Join.html">Join</a></li> 
-                        <li><a href="../HTML/Contact.html">Contact</a></li> 
+                        <li><a href="../HTML/Contact.html">Contact</a></li>
                       </ul>
         
         
@@ -37,8 +37,28 @@
                 
     </div>
     <div class="container">
-        
+        <div class="contact_box">
+            <h1>We LOVE to hear from you! For ad sales opportunities, please contact fruit-fruit@gmail.com </h1>
+           <form method="get" action="thankyou.html">
+            <fieldset> 
+                <legend>Applicant Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Email Address*<input type="text" name="email" placeholder="someone@somewhere.com" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>QUESTIONS, COMMENTS, CONCERNS</legend>
+                <label class="textbox"><textarea name="message" rows="10" cols="30" placeholder="comments.."></textarea></label>
+            </fieldset>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input  type="Submit" value="Thanks" class="submitBtn"></input>
+        </div>
+            
+         
     </div>
+        
     <footer>
         <div class="row">
             <div class="col">

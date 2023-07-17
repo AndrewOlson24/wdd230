@@ -1,0 +1,12 @@
+@media screen and (max-width: 894px) and (min-width: 650px){
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 1px;
+        grid-row-gap: 20px;
+        }
+
+
+}
