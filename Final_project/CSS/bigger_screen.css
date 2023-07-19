@@ -94,6 +94,8 @@ body{
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
     }
     
 .div1 { grid-area: 1 / 1 / 2 / 2;
@@ -238,8 +240,9 @@ body{
         padding: 10px;
         margin: 10px;
         }
-.div8 h5{
+.div8 h1{
     text-align: center;
+    text-decoration: underline;
 }
 .the_box{
         display:grid;
