@@ -28,7 +28,7 @@
                 
                         <li><a href="../HTML/index.html">Home</a></li>  
                         <li><a href="../HTML/Discovery.html">Fresh</a></li>   
-                        <li><a href="../HTML/Directory.html">Directory</a></li>  
+                        <li><a href="../HTML/Directory.html">About Us</a></li>  
                         <li><a href="../HTML/Join.html">Join</a></li> 
                         <li><a href="../HTML/Contact.html">Contact</a></li>  
                       </ul>
@@ -39,11 +39,11 @@
     </div>
     <div class="container">
         <div class="intro_box">
-            <h1>Create Your Very Own Specialty Drink</h1>
-            <img src="../images/beautiful-row-line-different-colored-alcohol-cocktails-mint-christmas-party-generative-ai-278574155.gif" width="50%" height="auto">
+            <h1>Create Your Very Own Specialty Drink<br><br><br></h1>
+            <img src="../images/beautiful-row-line-different-colored-alcohol-cocktails-mint-christmas-party-generative-ai-278574155.gif" width="50%" height="auto" class="drinksss">
         </div>
         <div class="drink_box">
-            <form method="get" action="thankyou.html">
+            <form id="quizForm">
                 <fieldset> 
                     <legend>Lets start with the basics...</legend>
                     <label class="top">First Name*<input type="text" name="fname" required></label>
@@ -222,11 +222,11 @@
 
 
                     <input type="hidden" id="timestamp" name="timestamp">
-                    <input  type="Submit" value="lets make the Drink" class="submitBtn"></input>
+                    <input  type="Submit" value="lets make the Drink" onclick="showAnswers()"></input>
                 
 
 
-                </form>
+            </form>
             
 
 
@@ -263,11 +263,11 @@
             <div class="col">
                 <ul class="navigation">
                 
-                    <li><a href="../Chambers/Index.html">Home</a></li>  
-                    <li><a href="../Chambers/Discover.html">Discovery</a></li>   
-                    <li><a href="../Chambers/Directory.html">Directory</a></li>  
-                    <li><a href="../Chambers/Join.html">Join</a></li> 
-                    <li><a href="../Chambers/contact.html">Contact</a></li> 
+                    <li><a href="../HTML/index.html">Home</a></li>  
+                    <li><a href="../HTML/Discovery.html">Fresh</a></li>   
+                    <li><a href="../HTML/Directory.html">About Us</a></li>  
+                    <li><a href="../HTML/Join.html">Join</a></li> 
+                    <li><a href="../HTML/Contact.html">Contact</a></li>  
                   </ul>
             </div>
             <div class="col">
@@ -280,8 +280,13 @@
                 
             </div>
 
-        </div>>
-       
+        </div>
+        <div class="line">
+            <br>
+            <cc>&copy; 2023 Bountifulfoods . : | : . Andrew W Olson . : | : . WDD 230 Final Project . : | : . Last Modification:</span> <span id="date1"></span> </span></cc>    
+            
+            <script src="../script/the_javascript.js"></script>  
+        </div>
     </footer>
 
 
