@@ -48,24 +48,12 @@
             <form id="quizForm">
                 <fieldset> 
                     <legend>Lets start with the basics...</legend>
-                    <label class="top">First Name*<input type="text" name="fname" required></label>
-                    <label class="top">Last Name*<input type="text" name="lname" required></label> 
-                    <label class="top">Email Address*<input type="email" name="email" placeholder="youremail@drink.com" required></label>
-                    <label class="top">Phone Number*<input type="tel" name="phone" placeholder="1235555454" required></label>
+                    <label class="top">First Name*<input type="text" id="trees" required></label>
+                    <label class="top">Last Name*<input type="text" id="balls" required></label> 
+                    <label class="top">Email Address*<input type="email" id="emailJK" placeholder="youremail@drink.com" required></label>
+                    <label class="top">Phone Number*<input type="tel" id="cellphone" placeholder="1235555454" required></label>
                 </fieldset>
 
-
-                <fieldset>
-                    <legend>Make your Drink</legend>
-                    <h1>ice?</h1>
-                    <img src="../images/ice.jpg" width="10%" height="auto">
-                    <label class="sbs"><input type="radio" name="Audience" value="Cube Ice">Cube Ice</label>
-                    <label class="sbs"><input type="radio" name="Audience" value="ball Ice">ball Ice</label>
-                    <label class="sbs"><input type="radio" name="Audience" value="NO-Ice"> No Ice</label>
-                    
-                    
-                    
-                </fieldset>
 
                 <fieldset>
                     <form id="fruitForm">
@@ -75,7 +63,7 @@
                     <h1>Pick up to 3 different fruit</h1>
                     <div class="split">
                         <label class="top">Fruit #1  
-                        <select name="subject">
+                        <select id="fruit1">
                             <option value="">Please Select &#9662;</option>
                             <option value="Apple">Apple</option>
                             <option value="Apricot">Apricot</option>
@@ -118,7 +106,7 @@
                             <option value="Watermelon">Watermelon</option>
                         </select>
                         <label class="top">Fruit #2  
-                            <select name="subject">
+                            <select id="fruit2">
                                 <option value="">Please Select &#9662;</option>
                                 <option value="Apple">Apple</option>
                                 <option value="Apricot">Apricot</option>
@@ -161,7 +149,7 @@
                                 <option value="Watermelon">Watermelon</option>
                             </select>
                             <label class="top">Fruit #3 
-                                <select name="subject">
+                                <select id="fruit3">
                                     <option value="">Please Select &#9662;</option>
                                     <option value="Apple">Apple</option>
                                     <option value="Apricot">Apricot</option>
@@ -219,17 +207,180 @@
                     <legend>Any Extra Stuff</legend>
                     <h1>Please add any extra fun stuff on the drink</h1>
                     <p>cherry on top, whip cream, umbrella picks, est....<br><br></p>
-                    <label class="textbox"><textarea name="message" rows="15" cols="50" placeholder="Add anything you like, use your imagination.."></textarea></label>
+                    <label class="textbox"><textarea id="manUpStairs" rows="15" cols="50" placeholder="Add anything you like, use your imagination.."></textarea></label>
                 </fieldset>
                 
 
                 <input type="hidden" id="timestamp" name="timestamp">    
                     
                     
+                <script type="text/javascript" language="javascript">
+                    function readJSON()
+                    {
+                        selectElement=document.querySelector("#fruit1");
+                        selectFruit=document.querySelector("#fruit2");
+                        theFruit=document.querySelector("#fruit3");
+                        fruitName = selectElement.value;
+                        theFruitName = selectFruit.value;
+                        fName = theFruit.value;
+                        
+
+                        selectElement10=document.querySelector("#trees");
+                        document.getElementById("branches").value = selectElement10.value;
+                        document.getElementById("branches").style = "color:red;";
+                        selectElement20=document.querySelector("#balls");
+                        document.getElementById("toys").value = selectElement20.value;
+                        document.getElementById("toys").style = "color:red;";
+                        selectElement30=document.querySelector("#cellphone");
+                        document.getElementById("tiggers").value = selectElement30.value;
+                        document.getElementById("tiggers").style = "color:red;";
+                        selectElement40=document.querySelector("#emailJK");
+                        document.getElementById("thor").value = selectElement40.value;
+                        document.getElementById("thor").style = "color:red;";
+                        selectElement50=document.querySelector("#manUpStairs");
+                        document.getElementById("basement").value = selectElement50.value;
+                        document.getElementById("basement").style = "color:red;";
+
+
+        
+        
+                        fetch("./fruit.json")
+                            .then(res => res.json())
+                            .then(data => {
+                             data.forEach(fruit => {
+                                if( fruit.name == fruitName)
+                                {
+                                    document.getElementById("fruitname").value = fruit.name;
+                                    document.getElementById("fruitname").style = "color:red;";
+                                    document.getElementById("fruitcarbs").value = fruit.nutritions.carbohydrates;
+                                    document.getElementById("fruitcarbs").style = "color:red;";
+                                    document.getElementById("fruitprotein").value = fruit.nutritions.protein;
+                                    document.getElementById("fruitprotein").style = "color:red;";
+                                    document.getElementById("fruitfats").value = fruit.nutritions.fat;
+                                    document.getElementById("fruitfats").style = "color:red;";
+                                    document.getElementById("fruitsugar").value = fruit.nutritions.sugar;
+                                    document.getElementById("fruitsugar").style = "color:red;";
+                                    document.getElementById("fruitcalories").value = fruit.nutritions.calories;
+                                    document.getElementById("fruitcalories").style = "color:red;";
+                                }
+                                if( fruit.name == theFruitName)
+                                {
+                                    document.getElementById("theFruitname2").value = fruit.name;
+                                    document.getElementById("theFruitname2").style = "color:red;";
+                                    document.getElementById("theFruitcarbs2").value = fruit.nutritions.carbohydrates;
+                                    document.getElementById("theFruitcarbs2").style = "color:red;";
+                                    document.getElementById("theFruitprotein2").value = fruit.nutritions.protein;
+                                    document.getElementById("theFruitprotein2").style = "color:red;";
+                                    document.getElementById("theFruitfats2").value = fruit.nutritions.fat;
+                                    document.getElementById("theFruitfats2").style = "color:red;";
+                                    document.getElementById("theFruitsugar2").value = fruit.nutritions.sugar;
+                                    document.getElementById("theFruitsugar2").style = "color:red;";
+                                    document.getElementById("theFruitcalories2").value = fruit.nutritions.calories;
+                                    document.getElementById("theFruitcalories2").style = "color:red;";
+                                }
+                                if( fruit.name == fName)
+                                {
+                                    document.getElementById("fName").value = fruit.name;
+                                    document.getElementById("fName").style = "color:red;";
+                                    document.getElementById("fNamecarbs").value = fruit.nutritions.carbohydrates;
+                                    document.getElementById("fNamecarbs").style = "color:red;";
+                                    document.getElementById("fNameprotein").value = fruit.nutritions.protein;
+                                    document.getElementById("fNameprotein").style = "color:red;";
+                                    document.getElementById("fNamefats").value = fruit.nutritions.fat;
+                                    document.getElementById("fNamefats").style = "color:red;";
+                                    document.getElementById("fNamesugar").value = fruit.nutritions.sugar;
+                                    document.getElementById("fNamesugar").style = "color:red;";
+                                    document.getElementById("fNamecalories").value = fruit.nutritions.calories;
+                                    document.getElementById("fNamecalories").style = "color:red;";
+                                }
+                                
+                            });
+                        });
+        
+                        
+        
+                    }   
+                </script>
+                <form id="form1">
+                <div>
+                    <div class="fruitDrinks">
+                        <div class="quick">
+                           <h1>Click the Button to Get Results</h1>
+                            <button type="button" onclick="readJSON();return false;" Text="Read JSON File">button</button>
+                            <br/><br/> 
+                        </div>
+                        
                     
-                    
-                    <script src="../script/script.js"></script>
-                    <button type="button" onclick="submitForm()">Submit</button>
+                        <div class="tipTop">
+                            <h2>First Name<br><br></h2>
+                            <input type="text" id="branches" style="color:#D3D3D3;" value="First Name"/>
+                            <h2><br>Last Name<br><br></h2>
+                            <input type="text" id="toys" style="color:#D3D3D3;" value="Last Name"/>
+                            <h2><br>Email<br><br></h2>
+                            <input type="text" id="tiggers" style="color:#D3D3D3;" value="Email"/>
+                            <h2><br>Phone Number<br><br></h2>
+                            <input type="text" id="thor" style="color:#D3D3D3;" value="Phone"/>
+                            <h2><br>Did you add anything?<br><br></h2>
+                            <input type="textbox" id="basement" style="color:#D3D3D3;" value="user input"/>
+                        </div>
+                        <div class="fruitOne">
+                            <div class="apple">
+                                    <h1>FruitName</h1>
+                                    <input type="text" id="fruitname" style="color:#D3D3D3;" value="Name"/>
+                                    <h2>Heath Information<br><br></h2>
+                                    <p>Carbohydrates</p>
+                                    <input type="text" id="fruitcarbs" style="color:#D3D3D3;" value="carbs"/>
+                                    <p>Protein</p>
+                                    <input type="text" id="fruitprotein" style="color:#D3D3D3;" value="Protien"/>
+                                    <p>Calories</p>
+                                    <input type="text" id="fruitfats" style="color:#D3D3D3;" value="fats"/>
+                                    <p>Fats</p>
+                                    <input type="text" id="fruitsugar" style="color:#D3D3D3;" value="sugar"/>
+                                    <p>Sugar</p>
+                                    <input type="text" id="fruitcalories" style="color:#D3D3D3;" value="calories"/>
+                            </div>
+                            <div class="banana">
+                                    <h1>FruitName</h1>
+                                    <input type="text" id="theFruitname2" style="color:#D3D3D3;" value="Name"/>
+                                    <h2>Heath Information<br><br></h2>
+                                    <p>Carbohydrates</p>
+                                    <input type="text" id="theFruitcarbs2" style="color:#D3D3D3;" value="carbs"/>
+                                    <p>Protein</p>
+                                    <input type="text" id="theFruitprotein2" style="color:#D3D3D3;" value="Protien"/>
+                                    <p>Calories</p>
+                                    <input type="text" id="theFruitfats2" style="color:#D3D3D3;" value="fats"/>
+                                    <p>Fats</p>
+                                    <input type="text" id="theFruitsugar2" style="color:#D3D3D3;" value="sugar"/>
+                                    <p>Sugar</p>
+                                    <input type="text" id="theFruitcalories2" style="color:#D3D3D3;" value="calories"/>
+
+                            </div>
+                            <div class="grapes">
+                                    <h1>FruitName</h1>
+                                    <input type="text" id="fName" style="color:#D3D3D3;" value="Name"/>
+                                    <h2>Heath Information<br><br></h2>
+                                    <p>Carbohydrates</p>
+                                    <input type="text" id="fNamecarbs" style="color:#D3D3D3;" value="carbs"/>
+                                    <p>Protein</p>
+                                    <input type="text" id="fNameprotein" style="color:#D3D3D3;" value="Protien"/>
+                                    <p>Calories</p>
+                                    <input type="text" id="fNamefats" style="color:#D3D3D3;" value="fats"/>
+                                    <p>Fats</p>
+                                    <input type="text" id="fNamesugar" style="color:#D3D3D3;" value="sugar"/>
+                                    <p>Sugar</p>
+                                    <input type="text" id="fNamecalories" style="color:#D3D3D3;" value="calories"/>
+                                
+                            </div>
+                    </div>
+                        
+                        
+                </div>
+                      
+                          
+                            
+                        
+        
+                    </div>
                 </div>
                 </form>
         
@@ -242,7 +393,7 @@
 
 
             </form>
-            <script src="../script/script.js"></script>
+
     </div>  
   </div>
 
