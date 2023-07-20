@@ -46,6 +46,10 @@ text-decoration: none;
    
     
 }
+.socialmedia{
+    display: flex;
+    
+}
 .navigation{
     float:right;
     height:100%;
@@ -53,10 +57,11 @@ text-decoration: none;
 }
 .navigation li{
     height:10%;
-    display:table;
+    display:grid;
+    table-layout: 6;
     float:left;
     padding: 0px 20px;
-    
+    background-color: #125215;
 }
 .navigation li a{
     display: table-cell;
@@ -66,6 +71,7 @@ text-decoration: none;
     color: aliceblue;
     font-family: 'Shadows Into Light', cursive;
     font-size:20px;
+    
 
 }
 .navigation li a:hover{
@@ -95,7 +101,7 @@ body{
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     font-family: 'Courier New', Courier, monospace;
-    
+
     }
     
 .div1 { grid-area: 1 / 1 / 2 / 2;
@@ -375,7 +381,7 @@ form legend{
     margin: 5%;
     padding: 1%;
     border: #000 solid 2px;
-    background-color: #71e72d;
+    background-color: #70f722;
     border-radius: 8%;
     font-size: 30px;
   
